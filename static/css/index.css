@@ -12,7 +12,16 @@ body {
     margin-top: 5px;
     margin-bottom: 5px;
 }
-
+.weatheredit-title {
+  font-weight: bold;
+  color: #a5443c; /* 深红色 */
+  font-family: 'Arial Black', Impact, sans-serif;
+  text-shadow:
+    -1px -1px 0 #fff,
+     1px -1px 0 #fff,
+    -1px  1px 0 #fff,
+     1px  1px 0 #fff;
+}
 .dnerf {
   font-variant: small-caps;
 }
