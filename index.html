@@ -117,12 +117,12 @@
 
 <!-- Teaser videos in a row -->
 <section class="hero teaser">
-  <div class="container">
+  <div class="container" style="max-width: 1800px;">
     <div class="hero-body">
-      <div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; align-items: center;">
+      <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; align-items: flex-start;">
 
         <!-- 视频 1 -->
-        <div style="max-width: 390px; width: 100%;">
+        <div style="flex: 1 1 ; max-width: 580px;">
           <video style="width: 100%; display: block;" autoplay controls muted loop>
             <source src="static/videos/banner_video.mp4" type="video/mp4">
           </video>
@@ -130,23 +130,19 @@
         </div>
 
         <!-- 视频 2 -->
-        <div style="max-width: 330px; width: 100%;">
+        <div style="flex: 1 1; max-width: 490px;">
           <video style="width: 100%; display: block;" autoplay controls muted loop>
             <source src="static/videos/banner_video3.mp4" type="video/mp4">
           </video>
-          <h2 class="subtitle has-text-centered">
-            Multi-view with 4D Editing
-          </h2>
+          <h2 class="subtitle has-text-centered">Multi-view with 4D Editing</h2>
         </div>
 
         <!-- 视频 3 -->
-        <div style="max-width: 390px; width: 100%;">
+        <div style="flex: 1 1 ; max-width: 580px;">
           <video style="width: 100%; display: block;" autoplay controls muted loop>
             <source src="static/videos/banner_video2.mp4" type="video/mp4">
           </video>
-          <h2 class="subtitle has-text-centered">
-            Controllable Weather Severity
-          </h2>
+          <h2 class="subtitle has-text-centered">Controllable Weather Severity</h2>
         </div>
 
       </div>
@@ -179,7 +175,33 @@
 </section>
 <!-- End paper abstract -->
 
-
+<section class="hero is-small" style="flex: 0.5; margin-bottom: 0px;">
+  <div class="hero-body" style="padding-bottom: 0;">
+    <div class="container">
+      <h2 class="title is-3 has-text-centered">Method</h2>
+      <div style="display: flex; justify-content: center; align-items: center; gap: 1px;">
+        <!-- First image with title -->
+        <div style="width: 100%; height: auto; text-align: center;">
+          <!-- 图像居中 -->
+          <img src="static/images/method.jpg" alt="Synthetic Image"
+               style="display: block; margin: 0 auto; width: 80%; height: auto; object-fit: cover;">
+          
+          <!-- 文字左对齐 -->
+          <div style="margin-top: 2px; width: 80%; margin-left: auto; margin-right: auto; text-align: left;">
+            <h3>
+              <strong> Overview of method.</strong> <strong>(a) Weather Background Editing</strong> An all-in-one adapter enables the synthesis of
+              diverse weather effects (e.g., snow, rain, fog) from text prompts and segmentation maps. Inference takes multi-frame and multi-view images
+              as input, using temporal-view (TV) attention to ensure consistency.
+              <strong>(b) Weather Particle Construction:</strong> A 4D Gaussian field, initialized from
+              3D Gaussians, undergoes attribute modeling and dynamic simulation, allowing user-controlled weather intensity (e.g., light, moderate,
+              heavy). Local field alignment ensures seamless integration of the reconstructed 3D scene with dynamic weather effects.
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 
 <!--BibTex citation -->
